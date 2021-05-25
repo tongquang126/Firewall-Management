@@ -35,5 +35,6 @@ def download_conf(name):
 login_GUI()
 download_conf(conf_name)
 
-
-
+# new function just to demo github pull command
+def demo():
+  print("I am demonstrating github pull command")
