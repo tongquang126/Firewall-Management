@@ -11,7 +11,7 @@ pipeline {
    stage('Test') {
       steps {
           echo 'Testing..'
-          sh 'python3 Execute_Button.py'
+          sh 'python3 Hello_World.py'
             }
           }
    stage('Report') {
