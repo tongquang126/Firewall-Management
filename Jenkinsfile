@@ -14,9 +14,9 @@ pipeline {
           sh 'python3 Execute_Button.py'
             }
           }
-   stage('Deploy') {
+   stage('Report') {
       steps {
-          echo 'Deploying....'
+          cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
             }
           }
         }
