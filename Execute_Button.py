@@ -1,7 +1,8 @@
 import sys
 import os
 # jenkins exposes the workspace directory through env.
-sys.path.append(os.environ['/var/lib/jenkins/workspace'])
+#sys.path.append(os.environ['/var/lib/jenkins/workspace'])
+sys.path.append("/var/lib/jenkins/workspace")
 import paramiko
 import time
 from tkinter import *
