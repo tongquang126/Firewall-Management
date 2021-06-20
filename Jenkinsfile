@@ -14,6 +14,13 @@ pipeline {
           sh 'python3 Hello_World.py'
             }
           }
+
+   stage('Email') {
+      steps {
+            mail bcc: '', body: '''Hi Quang
+            Welcome to USA''', cc: '', from: '', replyTo: '', subject: 'Jenkins', to: 'tongquang126@gmail.com'
+            }
+          }
           }
         }
       
