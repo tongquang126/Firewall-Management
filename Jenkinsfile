@@ -14,10 +14,6 @@ pipeline {
           sh 'python3 Hello_World.py'
             }
           }
-   stage('Report') {
-      steps {
-          cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
-            }
           }
         }
       }
